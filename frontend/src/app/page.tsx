@@ -1,9 +1,12 @@
 import Image from 'next/image'
+import RootLayout from './layout'
+import DashboardLayout from './dashboard/layout'
+import Dashboard from './dashboard/page'
 
 export default function Home() {
   return (
-    <main>
-      <h1>Hello World</h1>
-    </main>
+    <RootLayout>
+      <Dashboard/>
+    </RootLayout>
   )
 }
